@@ -3,10 +3,7 @@ Resources:
   - myLambdaFunction:
       Type: AWS::Lambda::Function
       Properties:
-        Name: ""
-        Alias: "Tom-hello-world-python3"
+        Name: "TomHelloWorld"
+        Alias: "TomHello"
         CurrentVersion: "1"
         TargetVersion: "2"
-Hooks:
-  - BeforeAllowTraffic: "LambdaFunctionToValidateBeforeTrafficShift"
-  - AfterAllowTraffic: "LambdaFunctionToValidateAfterTrafficShift"
